@@ -1,7 +1,7 @@
 # Vaccine Count Bot
 ![image](/function/assets/bot.jpg)
-Channel: [@myvaccinecount](t.me/myvaccinecount)<br>
-Bot: [@myvaccinecountbot](t.me/myvaccinecountbot) 
+Channel: [@myvaccinecount](https://t.me/myvaccinecount)<br>
+Bot: [@myvaccinecountbot](https://t.me/myvaccinecountbot) 
 
 ## Plattform
 - Google App Script (based JS API)
@@ -10,7 +10,7 @@ Bot: [@myvaccinecountbot](t.me/myvaccinecountbot)
 ## Before start
 You must have / know:
 - An Google Account, 
-- A Telegram Bot from [FatherBot](t.me/@BotFather) 
+- A Telegram Bot from [FatherBot](https://t.me/@BotFather) 
 - Basic JavaScript, 
 - Basic of using Google App Script.
 
