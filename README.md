@@ -50,4 +50,4 @@ Const.gasLink = "<YOUR LINK>"
 ## Referenced from
 https://github.com/limhenry/myvaccinecount
 ## License
-The project is published under the [MIT license](https://github.com/manho30/MyVaxCountBot/blob/master/LICENSE.md).
+The project is published under the [MIT license](https://github.com/manho30/MyVaxCountBot/blob/main/LICENSE).
