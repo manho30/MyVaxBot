@@ -6,12 +6,12 @@ const width = 15;
 
 const countNeededDay = (today_vax, all_vax) => {
     const today_vax_percent = (today_vax / population * 100).toFixed(1)
-    const un_vax = population - all_vax
+    const un_vax = population * 80 / 100 - all_vax
     const un_vax_percent = (un_vax / population * 100).toFixed(1)
     const result = Math.round(un_vax_percent / today_vax_percent)
     return result
 }
-const tester = () => {Logger.log(countNeededDay(237703,9609454))}
+const testCount = () => {Logger.log(countNeededDay(237703,9609454))}
 const generateBar = (value) => {
     const pop = Math.min(Math.max(value, 0), population);
     const progress = pop / population * 100;
