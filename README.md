@@ -1,5 +1,13 @@
 # Vaccine Count Bot
 ![image](/function/assets/bot.jpg)
+- **Daily updates**
+![image](/function/assets/notify.jpg)
+- **History data track**
+![image](/function/assets/history.jpg)
+- **Malaysia School vaccination track**
+Supported finding **100218** primary school and secondary that are under KPM Malaysia.
+- **Covid-19 confirmed case(s) track** 
+![image](/function/assets/school.jpg)
 Channel: [@myvaccinecount](https://t.me/myvaccinecount)<br>
 Bot: [@myvaccinecountbot](https://t.me/myvaccinecountbot) 
 
