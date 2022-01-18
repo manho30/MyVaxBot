@@ -39,7 +39,7 @@ const getFormatVaccination = (data, dates) => {
             const date = countNeededDay(parseInt(data[0].new_booster_dose), parseInt(data[0].total_booster_dose))
             const fully_percent = "*Fully Vaccinated* *" + vaccinatedPercentage(parseInt(data[0].total_dose_2), population) + " (+" +  vaccinatedPercentage(parseInt(data[0].new_dose_2), population) + " People*)\n" + generateBar(parseInt(data[0].total_dose_2)) + "\n\n"
             const booster_percent = "*Booster Dose* *" + vaccinatedPercentage(parseInt(data[0].total_booster_dose), population) + " (+" + vaccinatedPercentage(parseInt(data[0].new_booster_dose), population) + " People*)\n" + generateBar(parseInt(data[0].total_booster_dose)) + "\n\n"
-            const needed_day = `At today rate, it would take approximately ${date} to reach 80% coverage about booster dose.\n\n\n`
+            const needed_day = `At today rate, it would take approximately more ${date} days to reach 80% coverage about booster dose.\n\n\n`
             const fully_vaccinated = "*Fully Vaccinated*: " + parseCurrency(Number(data[0].total_dose_2)) + " (+" + parseCurrency(data[0].new_dose_2) + ")\n"
             const first_dose = "*Dose1 Completed*: " + parseCurrency(Number(data[0].total_dose_1)) + " (+" + data[0].new_dose_1 + ")\n"
             const booster_dose = "*Booster Dose*: " + parseCurrency(Number(data[0].total_booster_dose)) + " (+" + parseCurrency(data[0].new_booster_dose) + ")\n"
