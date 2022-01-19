@@ -1,4 +1,4 @@
-const postTelegram = (payload) => {
+const postTelegram = async (payload) => {
     const data = {
         'contentType': 'application/json',
         "method": "post",
@@ -7,7 +7,7 @@ const postTelegram = (payload) => {
     };
     var response, res;
     try {
-        response = UrlFetchApp.fetch("https://api.telegram.org/bot" + Const.botToken + "/", data);
+        response = await UrlFetchApp.fetch("https://api.telegram.org/bot" + Const.botToken + "/", data);
         res = JSON.parse(response);
         Logger.log(res)
         return res;
