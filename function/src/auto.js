@@ -1,8 +1,5 @@
-const channel = Const.channel
-const id = Const.myId
-
 const channel = "@myvaccinecount"
-const id = 1381836444 
+const id = Const.myId 
 
 const AutoSendMessage = async () => {
     const sendVaccination = await sendMessage(id, getFormatVaccination(parseVaccination(getVaccination())));
