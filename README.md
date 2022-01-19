@@ -1,13 +1,5 @@
 # Vaccine Count Bot
-![image](/function/assets/bot.jpg)
-- **Daily updates**
-![image](/function/assets/notify.jpg)
-- **History data track**
-![image](/function/assets/history.jpg)
-- **Malaysia School vaccination track**
-Supported finding **100218** primary school and secondary that are under KPM Malaysia.
-- **Covid-19 confirmed case(s) track** 
-![image](/function/assets/school.jpg)
+![](/assets/bot.jpg)
 Channel: [@myvaccinecount](https://t.me/myvaccinecount)<br>
 Bot: [@myvaccinecountbot](https://t.me/myvaccinecountbot) 
 
@@ -15,48 +7,50 @@ Bot: [@myvaccinecountbot](https://t.me/myvaccinecountbot)
 - Google App Script (based JS API)
 - Telegram Bot API
 
-## Before start
-You must have / know:
-- An Google Account, 
-- A Telegram Bot from [FatherBot](https://t.me/@BotFather) 
-- Basic JavaScript, 
-- Basic of using Google App Script.
+## Build Setup
+```
+This a simple explanation. Mayb it's not useful for beginners.
+```
 
-## Build and Set up
-It's no need to set up any environment due to it's run on Google Cloud Server. <br>
-Just follow the step below. <br>
-- Open https://script.google.com/home
-- Open a new project 
-- Copy all the code 
-- Change the `botToken` and `myId` to your own inside Const.js
-``` javascript
-var Const = {}
-Const.botToken = "<BOT_TOKEN"
-Const.myId = <YOUR ID>
-Const.gasLink = "<YOUR LINK>" 
+### Install 
 ```
-- After done all press on `Publish`
-- Make sure you deply it like 👇
-![image](/function/assets/deploy.jpg)
-- And then you will get a link call as Gas Link
-![image](/function/assets/deployed.jpg)
-- Copy it and back to Const.js
-- Change the `gaslink`
-``` javascript
-var Const = {}
-Const.gasLink = "<YOUR LINK>" 
+$ git clone https://github.com/manho30/MyVaxCountBot
+$ cd function/src/
+$ npm install @google/clasp -g
+$ code . 
 ```
-- Deploy it again
-- Back to fetch_telegram.js
-- Choose `Select Function` and `FetchingWebhook`
-![image](/function/assets/fetch.jpg)
-- Presss the run button 
-![image](/function/assets/fetched.jpg)
-- And your bot can work as normal now.
-## Source
-[Malaysia CITF official Github](https://github.com/CITF-Malaysia/citf-public/) <br>
-[MoH-Malaysia official Github](https://github.com/MoH-Malaysia/covid19-public)
-## Referenced from
-https://github.com/limhenry/myvaccinecount
-## License
-The project is published under the [MIT license](https://github.com/manho30/MyVaxCountBot/blob/main/LICENSE).
+
+### Edit Const.js
+
+- Change your own `bot_token`.
+- Change `Const.myId` to your personal ID.
+![](/assets/const.png)
+
+### Push the code to Google
+
+```
+$ npm install 
+
+# clasp login will pop up an login page 
+$ clasp login 
+
+# it will create a new project
+$ clasp create <script_name> 
+
+# enter in terminal once you done with the code
+$ clasp push
+
+# it's important, you must deploy it 
+# clasp deploy
+```
+More about using `clasp` Please visit [here](https://developers.google.com/apps-script/guides/clasp)
+### Webhook
+- Open [this link](https://script.google.com/home/)
+- Find the project you created just now and go to `const.js`
+- Simply click on PUBLISH button and copy the URL
+   - Change the `Const.gasLink` to the URL you copy just now. 
+   - Save it
+   - Go to `fetch_telegram` and run `fetchingWebhook` function.
+   ![](/assets/webhook.png)
+
+More Telegram Bot API please wisit [here](https://core.telegram.org/bots/api)
