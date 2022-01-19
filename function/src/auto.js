@@ -6,4 +6,8 @@ const AutoSendMessage = async () => {
     const sendCase = await sendMessage(id,getFormatCase(parseCase(getCases())));
     const resVax = await postTelegram(sendVaccination);
     const resCase = await postTelegram(sendCase);
+    if(resVax.ok === true){
+        const pinVax = await postTelegram(pinMsg(id, resVax.result.message_id));
+        Logger.log(`Result:${resVax}\n${pinVax}`)
+    }
 };
