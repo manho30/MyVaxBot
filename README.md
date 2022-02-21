@@ -1,5 +1,16 @@
 # Vaccine Count Bot
 ![](/assets/bot.jpg)
+
+This is a bot print out vaccination data of Malaysia to Telegram. 
+It was builded with JavaScript. The based version is forked from [limhenry/myvaccinecount](https://github.com/limhenry/myvaccinecount) (who created covidnow.moh.gov.my)
+
+It's nodejs twitter bot so I made it to Telegram bot with Google App Script and added some features. 
+- school vaccination 
+- history track 
+- daily vaccinations 
+  - clearly adol, children, adult vaccination data. 
+
+
 Channel: [@myvaccinecount](https://t.me/myvaccinecount)<br>
 Bot: [@myvaccinecountbot](https://t.me/myvaccinecountbot) 
 
