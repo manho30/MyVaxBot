@@ -10,6 +10,19 @@ It's nodejs twitter bot so I made it to Telegram bot with Google App Script and 
 - daily vaccinations 
   - clearly adol, children, adult vaccination data. 
 
+#### Provided two versions of bot 
+- v1
+  -_old versions_
+  - daily vaccinations message 
+  - progress bar
+  - clearly percentage to view
+
+- v2
+  - features same as v1
+  - added treeify data formated
+  - adol, child daily percentage
+  - fix some bug
+
 
 Channel: [@myvaccinecount](https://t.me/myvaccinecount)<br>
 Bot: [@myvaccinecountbot](https://t.me/myvaccinecountbot) 
