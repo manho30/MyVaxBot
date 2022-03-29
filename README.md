@@ -32,8 +32,6 @@ A Telegram bot print out Malaysia 🇲🇾
   - adolescent, child daily 
     vaccinations percentage
 
-
-Channel: [@myvaccinecount](https://t.me/myvaccinecount)<br>
 Bot: [@myvaccinecountbot](https://t.me/myvaccinecountbot) 
 
 ## Plattform
